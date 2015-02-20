@@ -1,22 +1,22 @@
-vacuum analyze gtfs_agency;
-vacuum analyze gtfs_stops;
-vacuum analyze gtfs_routes;
-vacuum analyze gtfs_calendar;
-vacuum analyze gtfs_calendar_dates;
-vacuum analyze gtfs_fare_attributes;
-vacuum analyze gtfs_fare_rules;
-vacuum analyze gtfs_shapes;
-vacuum analyze gtfs_trips;
-vacuum analyze gtfs_stop_times;
-vacuum analyze gtfs_frequencies;
-vacuum analyze gtfs_route_types;
-vacuum analyze gtfs_directions;
-vacuum analyze gtfs_pickup_dropoff_types;
-vacuum analyze gtfs_payment_methods;
+vacuum analyze agency;
+vacuum analyze stops;
+vacuum analyze routes;
+vacuum analyze calendar;
+vacuum analyze calendar_dates;
+vacuum analyze fare_attributes;
+vacuum analyze fare_rules;
+vacuum analyze shapes;
+vacuum analyze trips;
+vacuum analyze stop_times;
+vacuum analyze frequencies;
+vacuum analyze route_types;
+vacuum analyze directions;
+vacuum analyze pickup_dropoff_types;
+vacuum analyze payment_methods;
 
 
-vacuum analyze gtfs_transfers;
-vacuum analyze gtfs_feed_info;
-vacuum analyze gtfs_transfer_types;
-vacuum analyze gtfs_location_types;
+vacuum analyze transfers;
+vacuum analyze feed_info;
+vacuum analyze transfer_types;
+vacuum analyze location_types;
 

@@ -149,7 +149,7 @@ def import_file(fname, tablename, handler, COPY=True):
 
   defaultVal = 'NULL';
 
-  if not COPY:  
+  if not COPY:
     delim = ","
     insertSQL = "INSERT INTO " + tablename + " (" + cols + ") VALUES (%s);"
     func = lambda v: ((v and ("'"+v.replace("'","''")+"'")) or defaultVal)
@@ -166,9 +166,9 @@ def import_file(fname, tablename, handler, COPY=True):
 
   if COPY:
     yield "\\.\n"
-  
 
-    
+
+
 
 
 
@@ -212,7 +212,7 @@ if __name__ == "__main__":
   print "begin;"
 
   for fname in fnames:
-    for statement in import_file(dirname+"/"+fname+".txt","gtfs_"+fname,
+    for statement in import_file(dirname+"/"+fname+".txt", fname,
                                  handlers[fname],useCopy):
       print statement;
 
